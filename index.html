@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nguyễn Văn A | CV / Portfolio</title>
+  <meta name="description" content="CV - Portfolio cá nhân của Nguyễn Văn A: Frontend Developer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <link rel="icon" href="favicon.ico"/>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="logo-wrap">
+      <a href="#top" class="logo">A<span>.</span></a>
+    </div>
+    <nav class="main-nav" aria-label="Điều hướng chính">
+      <button class="nav-toggle" aria-expanded="false" aria-label="Mở menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-list">
+        <li><a href="#about">Giới thiệu</a></li>
+        <li><a href="#experience">Kinh nghiệm</a></li>
+        <li><a href="#projects">Dự án</a></li>
+        <li><a href="#skills">Kỹ năng</a></li>
+        <li><a href="#blog">Bài viết</a></li>
+        <li><a href="#contact">Liên hệ</a></li>
+      </ul>
+      <button id="themeToggle" class="theme-toggle" aria-label="Chuyển chế độ sáng/tối">
+        <span class="icon-sun" aria-hidden="true">☀️</span>
+        <span class="icon-moon" aria-hidden="true">🌙</span>
+      </button>
+      <a class="btn small ghost" href="assets/CV_NguyenVanA.pdf" download>CV PDF</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero container">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Xin chào, mình là <span class="accent">Nguyễn Văn A</span><br/>
+          <span class="gradient-text">Frontend Developer</span>
+        </h1>
+        <p class="hero-sub">
+          Đam mê xây dựng trải nghiệm web hiệu quả, nhanh, đẹp, tối ưu SEO &amp; khả năng truy cập.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn primary">Xem Dự Án</a>
+          <a href="#contact" class="btn outline">Liên Hệ</a>
+        </div>
+        <ul class="social-list">
+          <li><a href="https://github.com/yourname" aria-label="GitHub" rel="noopener" target="_blank">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/yourname" aria-label="LinkedIn" rel="noopener" target="_blank">LinkedIn</a></li>
+          <li><a href="mailto:you@example.com" aria-label="Email">Email</a></li>
+        </ul>
+      </div>
+      <div class="hero-media">
+        <div class="avatar-wrap">
+          <img src="assets/avatar.jpg" alt="Ảnh chân dung Nguyễn Văn A"/>
+        </div>
+        <div class="stats-grid">
+          <div class="stat">
+            <span class="stat-number" data-count="3">0</span>
+            <span class="stat-label">Năm kinh nghiệm</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-count="25">0</span>
+            <span class="stat-label">Dự án</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number" data-count="10">0</span>
+            <span class="stat-label">Khách hàng</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section container">
+      <div class="section-head">
+        <h2>Giới thiệu</h2>
+        <p>Một vài điều về tôi</p>
+      </div>
+      <div class="two-col">
+        <div>
+          <p>Tôi là một lập trình viên Frontend tập trung vào hiệu năng, khả năng truy cập và trải nghiệm người dùng. Tôi thích làm việc với React, TypeScript và kiến trúc component bền vững.</p>
+          <p>Triết lý của tôi: Code sạch không chỉ cho máy - mà cho con người đọc.</p>
+          <ul class="inline-tags">
+            <li>React</li>
+            <li>TypeScript</li>
+            <li>Next.js</li>
+            <li>Node.js</li>
+            <li>UI/UX</li>
+          </ul>
+        </div>
+        <div class="highlight-box">
+          <h3>Điểm nổi bật</h3>
+            <ul class="check-list">
+              <li>Tối ưu Lighthouse 95+ cho SPA</li>
+              <li>Thiết kế hệ thống component reuse</li>
+              <li>Tự động hoá CI/CD triển khai</li>
+              <li>Viết test (Jest, Testing Library)</li>
+            </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section alt container">
+      <div class="section-head">
+        <h2>Kinh nghiệm</h2>
+        <p>Hành trình chuyên môn</p>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="time">2024 - Nay</div>
+          <div class="content">
+            <h3>Frontend Engineer - Công ty ABC</h3>
+            <p>Xây dựng dashboard phân tích dữ liệu thời gian thực bằng React + WebSocket.</p>
+            <ul>
+              <li>Giảm 40% bundle size bằng code-splitting & tree-shaking.</li>
+              <li>Tối ưu TTFB và LCP trên trang chính.</li>
+            </ul>
+            <div class="tech-list">
+              <span>React</span><span>TypeScript</span><span>Vite</span><span>Tailwind</span>
+            </div>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="time">2022 - 2024</div>
+          <div class="content">
+            <h3>Web Developer - Startup XYZ</h3>
+            <p>Phát triển hệ thống đặt dịch vụ SaaS, tích hợp thanh toán và tối ưu SEO.</p>
+            <ul>
+              <li>Tăng conversion +18% qua cải thiện UX form đa bước.</li>
+              <li>Xây dựng design system nội bộ.</li>
+            </ul>
+            <div class="tech-list">
+              <span>Next.js</span><span>Node.js</span><span>PostgreSQL</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section container">
+      <div class="section-head">
+        <h2>Dự án tiêu biểu</h2>
+        <p>Một số sản phẩm tôi đã thực hiện</p>
+      </div>
+      <div class="projects-grid">
+        <!-- Project Card -->
+        <article class="project-card">
+          <div class="project-img">
+            <img src="assets/projects/project1.jpg" alt="Ảnh dự án 1" loading="lazy" />
+          </div>
+          <div class="project-body">
+            <h3>Analytics Dashboard</h3>
+            <p>Nền tảng hiển thị dữ liệu real-time cho đội marketing, filter linh hoạt & theme tuỳ biến.</p>
+            <ul class="tags">
+              <li>React</li><li>TypeScript</li><li>Socket.IO</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="btn small">Demo</a>
+              <a href="#" class="btn small ghost">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-img">
+            <img src="assets/projects/project2.jpg" alt="Ảnh dự án 2" loading="lazy" />
+          </div>
+          <div class="project-body">
+            <h3>Booking Platform</h3>
+            <p>Ứng dụng đặt lịch dịch vụ với tích hợp thanh toán & email automation.</p>
+            <ul class="tags">
+              <li>Next.js</li><li>Prisma</li><li>Stripe</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="btn small">Demo</a>
+              <a href="#" class="btn small ghost">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-img">
+            <img src="assets/projects/project3.jpg" alt="Ảnh dự án 3" loading="lazy" />
+          </div>
+            <div class="project-body">
+              <h3>UI Component Library</h3>
+              <p>Thư viện component nội bộ, style tokens, dark mode, docs story-based.</p>
+              <ul class="tags">
+                <li>Storybook</li><li>Rollup</li><li>SCSS</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" class="btn small">Docs</a>
+                <a href="#" class="btn small ghost">NPM</a>
+              </div>
+            </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section alt container">
+      <div class="section-head">
+        <h2>Kỹ năng</h2>
+        <p>Năng lực kỹ thuật & mềm</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-block">
+          <h3>Frontend</h3>
+          <ul class="skill-bars">
+            <li>
+              <span>React / Next.js</span>
+              <div class="bar"><span style="--p:90%"></span></div>
+            </li>
+            <li>
+              <span>TypeScript</span>
+              <div class="bar"><span style="--p:85%"></span></div>
+            </li>
+            <li>
+              <span>HTML / CSS / Accessibility</span>
+              <div class="bar"><span style="--p:95%"></span></div>
+            </li>
+            <li>
+              <span>Performance Optimization</span>
+              <div class="bar"><span style="--p:80%"></span></div>
+            </li>
+          </ul>
+        </div>
+        <div class="skill-block">
+          <h3>Backend & Khác</h3>
+          <ul class="skill-tags">
+            <li>Node.js</li><li>Express</li><li>REST</li><li>GraphQL</li>
+            <li>PostgreSQL</li><li>Redis</li><li>Docker</li><li>CI/CD</li>
+          </ul>
+        </div>
+        <div class="skill-block">
+          <h3>Công cụ</h3>
+          <ul class="skill-tags">
+            <li>Git</li><li>Jest</li><li>Vitest</li><li>ESLint</li>
+            <li>Figma</li><li>Storybook</li><li>Vite</li><li>Webpack</li>
+          </ul>
+        </div>
+        <div class="skill-block">
+          <h3>Kỹ năng mềm</h3>
+            <ul class="soft-skills">
+              <li>Làm việc nhóm</li>
+              <li>Giao tiếp</li>
+              <li>Giải quyết vấn đề</li>
+              <li>Tư duy phản biện</li>
+            </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog" class="section container">
+      <div class="section-head">
+        <h2>Bài viết</h2>
+        <p>Chia sẻ & ghi chú</p>
+      </div>
+      <div class="posts">
+        <article class="post-card">
+          <h3><a href="#">Tối ưu hiệu năng React với useMemo hợp lý</a></h3>
+          <p class="meta">05/2025 · 6 phút đọc</p>
+          <p class="excerpt">Không phải lúc nào cũng cần useMemo. Bài viết này phân tích 3 pattern phổ biến...</p>
+        </article>
+        <article class="post-card">
+          <h3><a href="#">Design System: Token hoá từ đầu đến cuối</a></h3>
+          <p class="meta">03/2025 · 8 phút đọc</p>
+          <p class="excerpt">Tokens giúp giảm sự trùng lặp và tăng tốc độ phát triển UI. Cách tôi triển khai...</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section alt container">
+      <div class="section-head">
+        <h2>Liên hệ</h2>
+        <p>Kết nối hoặc hợp tác</p>
+      </div>
+      <div class="contact-grid">
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Tên</label>
+            <input id="name" name="name" type="text" placeholder="Tên của bạn" required/>
+            <small class="error"></small>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required/>
+            <small class="error"></small>
+          </div>
+            <div class="field">
+              <label for="message">Nội dung</label>
+              <textarea id="message" name="message" rows="5" placeholder="Lời nhắn..." required></textarea>
+              <small class="error"></small>
+            </div>
+            <div class="field-inline">
+              <label>
+                <input type="checkbox" name="consent" required/>
+                Tôi đồng ý cho bạn liên hệ lại.
+              </label>
+              <small class="error"></small>
+            </div>
+            <button type="submit" class="btn primary full">Gửi</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+        <div class="contact-info">
+          <h3>Thông tin</h3>
+          <ul class="info-list">
+            <li>Email: <a href="mailto:you@example.com">you@example.com</a></li>
+            <li>Địa điểm: Hà Nội, Việt Nam</li>
+            <li>Sẵn sàng: Remote / Hybrid</li>
+          </ul>
+          <h3>Kênh khác</h3>
+          <ul class="social-alt">
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Twitter/X</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Nguyễn Văn A. Made with passion.</p>
+    <a href="#top" class="back-to-top" aria-label="Lên đầu trang">↑</a>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
